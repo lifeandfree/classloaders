@@ -19,7 +19,7 @@ public class HumanLoader  extends ClassLoader {
     @Override
     public Class<?> loadClass(String name) throws ClassNotFoundException {
         if (name.equals("WhiteHuman")) {
-            String dest = "file:/opt/git/labs/classloader/WhiteHuman.class";
+            String dest = "file:/opt/git/innopolis/classloader/WhiteHuman.class";
             try {
                 URL url = new URL(dest);
                 URLConnection urlConnection = url.openConnection();
